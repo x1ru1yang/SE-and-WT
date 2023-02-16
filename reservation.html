@@ -1,10 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <style>
+            .header {
+                display: grid;
+                grid-column-gap: 30px;
+                grid-row-gap: 0px;
+                /*一行放两列->两个auto*/
+                grid-template-columns: auto auto auto auto auto;
+                background-color: lavender;
+                color: black;
+                font-family: "Papyrus";
+                border-radius: 10px;
+            }
+
+            .nav {
+                color: black;
+                text-decoration: none;
+            }
+
+            .article {
+                background-color: white;
+                color: black;
+                font-family: "Papyrus";
+                border-radius: 10px;
+            }
+
+            aside {
+                width: 30%;
+                float: right;
+                font-family: "Papyrus";
+            }
+
+            footer {
+                bottom: 0;
+                height: 60px;
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                background-color: lavender;
+                color: black;
+                font-family: "Papyrus";
+                border-radius: 10px;
+            }
+
+            .link {
+                color: black;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>CouBooks</h1>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Webtech demo site</h3>
+            <a href="home.html" class="nav">&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="courses.html" class="nav">Course&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="reservation.html" class="nav">Reservation&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="about.html" class="nav">About</a>
+        </div>
+
+        <section id="step1" class="article">
+            <p>
+                STEP 1: WHO ARE YOU <br>
+                Please provide some info about you, so we can search for the books you need...
+            </p>
+            <form action="step2" method="GET">
+                <label for="fase">Fase: </label>
+                <select name="fase" id="fase" class="article">
+                    <option>First Bachelor</option>
+                    <option>Second Bachelor</option>
+                </select> <br>
+                <label for="input_email">Email: </label>
+                <input type="email" name="email" id="input_email" class="article"/> <br> <br>
+                <input type="submit" name="next" value="Next..." class="article"/>
+            </form>
+        </section>
+
+        <section id="step2" class="article">
+            <p>
+                STEP 2: WHAT BOOKS DO YOU NEED ? <br>
+                Select the books you wish to order...
+            </p>
+            <form action="step3">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Computer networking">
+                <label for="vehicle1"> Computer networking: a top down approach</label> <br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Operating System">
+                <label for="vehicle2"> Silberschatz's Operating System Concepts</label> <br>
+                <input type="submit" name="next" value="Next..." class="article"/>
+            </form>
+        </section>
+
+        <section id="step3" class="article">
+            <p>
+                YOU HAVE ORDERED... <br>
+                Below you find an overview of the books you have reserved. Once you confirm your reservation you can
+                pick them up at our KD and pay at the desk
+            </p>
+            <ul>
+                <li>Computer networking: a top down approach</li>
+            </ul>
+            <form action="reservation.html">
+                <input type="submit" name="confirm" value="Confirm Reservation" class="article"/>
+            </form>
+        </section>
+
+        <footer>
+            <p>Copyright © 2022 WebTech. KUL All Rights Reserved.
+                <a href="http://" class="link">Privacy Policy</a> |
+                <a href="http://" class="link">Terms of Use</a>
+            </p>
+        </footer>
+    </body>
 </html>
