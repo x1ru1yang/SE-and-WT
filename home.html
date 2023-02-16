@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <style>
+            .header {
+                display: grid;
+                grid-column-gap: 30px;
+                grid-row-gap: 0px;
+                /*一行放两列->两个auto*/
+                grid-template-columns: auto auto auto auto auto;
+                background-color: lavender;
+                color: black;
+                font-family: "Papyrus";
+                border-radius: 10px;
+            }
+
+            .nav {
+                color: black;
+                text-decoration: none;
+            }
+
+            .article {
+                background-color: white;
+                color: black;
+                font-family: "Papyrus";
+                border-radius: 10px;
+            }
+
+            aside {
+                width: 30%;
+                float: right;
+                font-family: "Papyrus";
+            }
+
+            footer {
+                bottom: 0;
+                height: 60px;
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                background-color: lavender;
+                color: black;
+                font-family: "Papyrus";
+                border-radius: 10px;
+            }
+
+            .link {
+                color: black;
+            }
+
+        </style>
+    </head>
+
+    <body>
+<!--        <header class="header">-->
+<!--            <h1>CouBooks</h1>-->
+<!--            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Webtech demo site</h3>-->
+<!--            <a href="http://" class="nav">&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;</a>-->
+<!--            <a href="http://" class="nav">Course&nbsp;&nbsp;&nbsp;&nbsp;</a>-->
+<!--            <a href="http://" class="nav">Reservation&nbsp;&nbsp;&nbsp;&nbsp;</a>-->
+<!--            <a href="http://" class="nav">About</a>-->
+<!--        </header>-->
+
+        <div class="pagewrap">
+            <div class="header">
+                <h1>CouBooks</h1>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Webtech demo site</h3>
+                <a href="home.html" class="nav">&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a href="courses.html" class="nav">Course&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a href="reservation.html" class="nav">Reservation&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a href="about.html" class="nav">About</a>
+            </div>
+
+            <aside>
+                <h2>Opening Hours:</h2>
+                <ul>
+                    Mon: 9am-11am <br>
+                    Tue: 1pm-4pm <br>
+                    Fri: 1pm-4pm
+                </ul>
+                <h2>Feedback</h2>
+                <ul>
+                    This concept is
+                    awesome! Also, the
+                    site looks nice and
+                    stylish (Jeroen) <br> <br>
+                    Is there also a
+                    mobile app for this
+                    site? (Patrick) <br> <br>
+                    <a href="feedback.html" class="link">Add feedback...</a>
+                </ul>
+            </aside>
+
+            <article class="article">
+                <h2>Welcome to the CouBooks website</h2>
+                <h3>Are you ready to study?</h3>
+                <p>
+                    When in need for the correct course books or printed slides, you should have a
+                    look to our course book website for EA. Here you can find an overview of all
+                    course material that is needed for every course within the EA program. Select
+                    your fase and see what is needed... <br> <br>
+                    This <b>Course Book Service</b> site is specially designed as a demonstration for
+                    the web technology course. In the end, this page can be found on the
+                    development web server <a href="http://" class="link">studev.groept.be</a> Within this demonstration we will
+                    step-by-step create this site.
+                </p>
+            </article>
+
+            <footer>
+                <p>Copyright © 2022 WebTech. KUL All Rights Reserved.
+                    <a href="http://" class="link">Privacy Policy</a> |
+                    <a href="http://" class="link">Terms of Use</a>
+                </p>
+            </footer>
+        </div>
+
+
+    </body>
+</html>
